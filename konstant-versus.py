@@ -17,7 +17,7 @@ pygame.init()
 WIDTH, HEIGHT = pygame.display.Info().current_w, pygame.display.Info().current_h
 FONT = pygame.font.SysFont("Consolas", int(WIDTH // 32))
 scr = pygame.display.set_mode((WIDTH, HEIGHT), vsync=1, flags=pygame.FULLSCREEN)
-pygame.display.set_caption("Konstancin Gra v1.3")
+pygame.display.set_caption("Konstancin Gra Versus v1.0")
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
