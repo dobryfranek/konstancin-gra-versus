@@ -48,7 +48,12 @@ class Player():
         self.x_vel = 0
         self.img = img
         self.rect = img.get_rect()
-        self.rect.centerx = WIDTH // 2
+        match self.name:
+            case "mateusz":
+                self.rect.centerx = WIDTH // 4
+            case "paweł":
+                self.rect.centerx = WIDTH // 4 * 3
+        
         self.rect.bottom = HEIGHT
         self.last_moved = 0
     
