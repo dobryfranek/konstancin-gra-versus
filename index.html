@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pobierz Konstancin Versus">
+    <meta property="og:description" content="Niebo nad Konstancinem rozdarło się, a z chmur zaczęły spadać masywne głazy, miażdżąc budynki i ulice. Krzyki ginęły w huku destrukcji. Śmierć czai się wszędzie – każdy krok może być ostatnim. Razem z towarzyszem biegnij przez ruiny, walcząc o życie. Nie ma schronienia, nie ma ratunku. To Konstancin-Jeziorna.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/dobryfranek/konstancin-gra/refs/heads/main/player2.jpg">
+    <meta property="og:url" content="https://dobryfranek.github.io/konstancin-gra-versus">
+    <meta name="theme-color" content="#00dd00">
+    <title>Gra Konstancin Versus Download</title>
+    <style>
+        body {
+            background-color: rgb(24,26,27);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        const skaluj = () =>
+        {
+
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        let img = document.getElementById("img");
+
+        if (h > w) { // phone probably
+            img.style.width = "90vw";
+        }
+
+        else {
+            img.style.width = "auto";
+        };
+
+        };
+
+        window.addEventListener("resize", skaluj);
+        document.addEventListener("DOMContentLoaded", skaluj);
+    </script>
+</head>
+<body>
+    <!-- <a href="https://github.com/dobryfranek/konstancin-gra/releases/download/v1.3/kostant-v1.3.exe"><img id="img" src="link.png"></a> -->
+</body>
+</html>
