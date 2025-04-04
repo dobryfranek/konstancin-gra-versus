@@ -188,6 +188,10 @@ while running:
         gierek1.friction = BASE_FRICTION
 
     gierek1.x_vel *= gierek1.friction # tarcie
+
+    if abs(gierek1.x_vel) < 0.1:
+        gierek1.x_vel = 0
+
     gierek1.rect.x += gierek1.x_vel
 
     if abs(gierek1.x_vel) > 1:
@@ -227,7 +231,12 @@ while running:
         gierek2.friction = BASE_FRICTION
 
     gierek2.x_vel *= gierek2.friction # tarcie
+
+    if abs(gierek2.x_vel) < 0.1:
+        gierek2.x_vel = 0
+
     gierek2.rect.x += gierek2.x_vel
+
 
     if abs(gierek2.x_vel) > 1:
         gierek2.last_moved = game_time
